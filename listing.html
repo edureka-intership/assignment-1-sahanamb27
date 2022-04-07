@@ -1,0 +1,309 @@
+<html>
+
+<head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="listing.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#edunav">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                <a class="navbar-brand" href="#">
+                    <div class="header-logo">
+                        <a href="home.html"><b>e!</b></a>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="edunav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="">
+                            <span class="glyphicon glyphicon-user"> Register</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="glyphicon glyphicon-log-in"> Login</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <div id="header">
+         <div class="header-logo">
+           <a href="home.html"><b>e!</b></a>
+        </div>
+         <div id="account">
+            <div class="login">Login</div>
+            <div class="account">Create an account</div>
+         </div>
+      </div> -->
+    <div class="container">
+        <div class="row">
+            <p class="headingText">Breakfast Places in Mumbai</p>
+            <div id="content">
+                <!-- filter div starts -->
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xl-4">
+
+                    <div id="filterDiv">
+                        <div>
+                            <span class="headingFilter">Filter</span>
+                            <div>
+                                <span class="location">Select Location</span>
+                                <div>
+                                    <select id="locationselect">
+                        <option>Select Location</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Hyderbad</option>
+                     </select>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="subHeding">Cuisine Filter</span>
+                                <ul id="filter1">
+                                    <li><input type="checkbox" name="Cusinefilter1" value="All" /> <label> All</label></li>
+                                    <li><input type="checkbox" name="Cusinefilter2" value="North Indian" /> <label> North Indian</label></li>
+                                    <li><input type="checkbox" name="Cusinefilter3" value="South Indian" /> <label> South Indian </label></li>
+                                    <li> <input type="checkbox" name="Cusinefilter4" value="Chinese" /> <label> Chinese </label></li>
+                                    <li><input type="checkbox" name="Cusinefilter5" value="Fast Food" /> <label> Fast Food </label></li>
+                                    <li><input type="checkbox" name="Cusinefilter6" value="Street Food" /> <label> Street Food</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="secondheadingFilter">Cost For Two</span>
+                            <br>
+                            <ul id="filter1">
+                                <li><input type="radio" name="Costfilter" value="All" /> <label> All </label></li>
+                                <li><input type="radio" name="Costfilter" value="100-300" /> <label> 100-300 </label></li>
+                                <li><input type="radio" name="Costfilter" value="301-500" /> <label> 301-500 </label></li>
+                                <li> <input type="radio" name="Costfilter" value="501-700" /> <label> 501-700 </label></li>
+                                <li><input type="radio" name="Costfilter" value="701-900" /> <label> 701-900 </label></li>
+                                <li><input type="radio" name="Costfilter" value="901-1500" /> <label> 901-1500 </label></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <span class="thirdheadingFilter">Sort</span>
+                            <ul id="filter3">
+                                <li><input type="radio" name="sortfilter" value="Price low to high" /> <label> Price low to high</label></li>
+                                <li><input type="radio" name="sortfilter" value="Price high to low" /> <label> Price high to low </label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- filter div ends -->
+                <div class="col-sm-8 col-lg-8">
+
+                    <div class="media" id="restarents">
+                        <div class="media-left">
+                            <img src="images/breakfast2.jpg" class="media-object restarentimg" />
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading" id="mainrestarent">Udupi Dosa House</h4>
+                            <h3 id="restaurentlocation">Madhapur, Mumbai</h3>
+                            <p id="reataurentadres">Shop 1, Plot D, Samruddhi Complex, Chincholi …
+                            </p>
+                            <button class="btn btn-success">View</button>
+                        </div>
+                        <hr>
+                        <div>
+                            <table class="detailsofrestarent">
+                                <tr>
+                                    <th>CUISINES</th>
+                                    <td>South Indian</td>
+                                </tr>
+                                <tr>
+                                    <th>COST FOR TWO</th>
+                                    <td>&#8377;300</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="media" id="restarents">
+                        <div class="media-left">
+                            <img src="images/food (2).jpg" class="media-object restarentimg" />
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading" id="mainrestarent">Suprabath Tiffins</h4>
+                            <h3 id="restaurentlocation">Ameerpet, Mumbai</h3>
+                            <p id="reataurentadres">Shop 1, Plot D, Samruddhi Complex, Chincholi …
+                            </p>
+                            <button class="btn btn-success">View</button>
+                        </div>
+                        <hr>
+                        <div>
+                            <table class="detailsofrestarent">
+                                <tr>
+                                    <th>CUISINES</th>
+                                    <td>South Indian, Chinese</td>
+                                </tr>
+                                <tr>
+                                    <th>COST FOR TWO</th>
+                                    <td>&#8377;100</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="media" id="restarents">
+                        <div class="media-left">
+                            <img src="images/lunch.jpg" class="media-object restarentimg" />
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading" id="mainrestarent">The Big Chill Cakery</h4>
+                            <h3 id="restaurentlocation">FORT</h3>
+                            <p id="reataurentadres">Shop 1, Plot D, Samruddhi Complex, Chincholi …
+                            </p>
+                            <button class="btn btn-success">View</button>
+                        </div>
+                        <hr>
+                        <div>
+                            <table class="detailsofrestarent">
+                                <tr>
+                                    <th>CUISINES</th>
+                                    <td> Chinese, Fast Food, Shake</td>
+                                </tr>
+                                <tr>
+                                    <th>COST FOR TWO</th>
+                                    <td>&#8377;200</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- <div id="contentDiv">
+
+            <div class="restarents">
+            <div class="col-sm-3 col-lg-3">
+               <img src="images/some.jpg" class="restarentimg" />
+               </div>
+                  <!-- <div id="content1">
+                     <p id="mainrestarent">The Big Chilli </p>
+                     <p id="restaurentlocation">Delhi</p>
+                     <p id="reataurentadres">Shop1,Plot D,Samruddhi Complex......</p>
+                   </div> -->
+                <!-- <div id="content1" class="col-sm-5 col-lg-5">
+                     <div id="mainrestarent">The Big Chill Cakery</div>
+                     <div id="restaurentlocation">FORT</div>
+                     <div id="reataurentadres">Shop 1, Plot D, Samruddhi Complex, Chincholi …</div>
+                 </div>
+               <hr>
+               <div>
+                  <table class="detailsofrestarent">
+                     <tr>
+                        <th>CUISINES</th>
+                        <td>Bakery</td>
+                     </tr>
+                     <tr>
+                        <th>COST FOR TWO</th>
+                        <td>&#8377;700</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         </div>
+         </div>
+
+
+
+            <div class="restarents">
+               <img src="images\breakfast2.jpg" class="restarentimg" />
+               <div id="content1">
+                  <p id="mainrestarent">The food Shop</p>
+                  <p id="restaurentlocation">Hyderabad</p>
+                  <p id="reataurentadres">Shop2,Plot C2,Mytrivanam Complex......</p>
+               </div>
+               <hr>
+               <div>
+                  <table class="detailsofrestarent">
+                     <tr >
+                        <th>CUISINES</th>
+                        <td>Bakery</td>
+                     </tr>
+                     <tr>
+                        <th>COST FOR TWO</th>
+                        <td>&#8377;300</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <div class="restarents">
+               <img src="images/food.jpg" class="restarentimg" />
+               <div id="content1">
+                  <span id="mainrestarent">The Paradise Biryani</span>
+                  <span id="restaurentlocation">Hyderbad</span>
+                  <span id="reataurentadres">Shop3,Plot B2,Meenakshi Complex......</span>
+               </div>
+               <hr>
+               <div>
+                  <table class="detailsofrestarent">
+                     <tr >
+                        <th>CUISINES</th>
+                        <td>Bakery</td>
+                     </tr>
+                     <tr>
+                        <th>COST FOR TWO</th>
+                        <td>&#8377;450</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         </div> -->
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <p id="footText">&copy; Developer </p>
+        <hr/>
+        <div class="footDiv">
+            <p>Contact Us</p>
+            <p>About Us</p>
+        </div>
+        <div class="footDiv">
+            <p>Contact Us</p>
+            <p>About Us</p>
+        </div>
+        <div class="footDiv noBorder">
+            <p>Contact Us</p>
+            <p>About Us</p>
+        </div>
+    </footer>
+</body>
+
+</html>
